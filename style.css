@@ -19,7 +19,7 @@ scroll-behavior: smooth;
  
 .Navbar {
     background: #39399a;
-    height: 10vh;
+    height: 70px;
 
     display: flex;
     align-items: center;
@@ -81,20 +81,17 @@ scroll-behavior: smooth;
     margin: 4px 0;
 }
 
-/* CONTENT FIX VH BUG */
 .Content {
-    background-color: #39399a;
+    background-color: #6f79e5;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10vh;
-    height: 80vh;
-    font-size: 40px;
 
-    position: relative;
-    z-index: 1;
+    min-height: calc(100vh - 70px);
+
+    padding-top: 70px;
 }
-
 /* CONTENT BOX FIX ZOOM */
 .a-content {
     color: black;
@@ -216,7 +213,7 @@ color: rgb(255, 255, 255);
 
 .ul-nav {
     position: absolute;
-    top: 10vh;
+    top: 70px;
     right: 0;
 
     background: #39399a;
@@ -252,6 +249,7 @@ color: rgb(255, 255, 255);
         padding: 20px;
     }
 }
+
 
 
 
