@@ -36,13 +36,6 @@ scroll-behavior: smooth;
     transform: translateX(-50%);
 }
 
-/* Logo Tengah */
-.logo {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-}
-
 /* Menu Normal */
 .ul-nav {
     display: flex;
@@ -80,74 +73,23 @@ scroll-behavior: smooth;
     margin: 4px 0;
 }
 
-/* RESPONSIVE MOBILE */
-@media (max-width: 768px) {
-
-    .burger {
-        display: flex;
-    }
-
-    .ul-nav {
-        position: absolute;
-        top: 10vh;
-        right: 0;
-        background: #39399a;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-
-    .ul-nav li {
-        padding: 15px 0;
-    }
-
-    #menu-toggle:checked ~ .ul-nav {
-        display: flex;
-    }
-}
-
-
-
-
-.li-nav {
-list-style-type: none;
-padding: 20px;
-margin: 5px;
-color:rgb(255, 255, 255);
-font-size: 30px;
-}
-
-.li-nav:hover {
-    background-color: #648ddf;    
-    transition: .5s ease-in-out;
-    transition-delay: .2s;
-    border-radius: 8px;
-}
-
-.a-nav{
-text-decoration: none;
-color: white;
-}
-
-
-
+/* CONTENT FIX VH BUG */
 .Content {
     background-color: #6f79e5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh; /* FIX dari height */
     font-size: 40px;
 }
 
-
+/* CONTENT BOX FIX ZOOM */
 .a-content {
     color: black;
     font-size: 30px;
     text-decoration: none;
-    width: 720px;
-    height: 480px;
+    max-width: 720px; /* FIX dari width */
+    height: auto; /* FIX dari height */
 
     display: flex;
     justify-content: center;
@@ -156,17 +98,15 @@ color: white;
     text-align: center;
 }
 
+/* BIO SECTION */
 .bio-section {
     display: flex;
     flex-direction: row;
     gap: 40px;
     padding: 40px;
-
     min-height: calc(100vh - 140px);
     align-items: center;
 }
-
-
 
 /* SLIDER */
 
@@ -176,9 +116,6 @@ color: white;
     height: 350px;
     overflow: hidden;
     border-radius: 12px;
-  
-  
-    
 }
 
 .slides img {
@@ -219,26 +156,17 @@ color: white;
 .biodata {
     color: black;
     max-width: 400px;
+    margin-bottom: 15px;
 }
 
 .biodata2 {
     color: rgb(248, 248, 248);
     max-width: 400px;
-}
-
-.biodata {
     margin-bottom: 15px;
- 
 }
 
 h3 {
     font-size: 40px;
-}
-
-
-.biodata2 {
-    margin-bottom: 15px;
-   
 }
 
 h5 {
@@ -249,7 +177,7 @@ h5 {
     margin: 6px 0;
 }
 
-
+/* FOOTER */
 
 .Footer {
     background-color: #39399a;
@@ -262,5 +190,47 @@ h5 {
 .h2 {
 font-size: 30px;
 color: rgb(255, 255, 255);
+}
 
+/* MOBILE RESPONSIVE FIX */
+
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+    }
+
+    .ul-nav {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        background: #39399a;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .ul-nav li {
+        padding: 15px 0;
+    }
+
+    #menu-toggle:checked ~ .ul-nav {
+        display: flex;
+    }
+
+    /* FIX ZOOM MOBILE */
+    .a-content {
+        max-width: 90%;
+        font-size: 22px;
+    }
+
+    .Content {
+        font-size: 24px;
+    }
+
+    .bio-section {
+        flex-direction: column;
+        padding: 20px;
+    }
 }
