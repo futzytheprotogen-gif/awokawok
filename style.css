@@ -109,16 +109,6 @@ scroll-behavior: smooth;
     
 }
 
-/* BIO SECTION */
-.bio-section {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    padding: 40px;
-    min-height: calc(100vh - 140px);
-    align-items: center;
-    padding-top: 10vh;
-}
 
 /* SLIDER */
 
@@ -246,10 +236,16 @@ color: rgb(255, 255, 255);
     }
 
     .bio-section {
-        flex-direction: column;
-        padding: 20px;
+        background-color: #6f79e5;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px;
+    min-height: calc(100vh - 140px);
+    align-items: center;
+    padding-top: 10vh;
     }
 }
+
 
 
 
