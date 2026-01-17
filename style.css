@@ -17,21 +17,22 @@ scroll-behavior: smooth;
 }
 
  
+
+
 .Navbar {
-    background: #39399a;
-    height: 70px;
+    background: #39399a; /* sama kayak footer */
+    height: 10vh;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
 
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-
     z-index: 9999;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .logo {
@@ -249,6 +250,7 @@ color: rgb(255, 255, 255);
         padding: 20px;
     }
 }
+
 
 
 
