@@ -249,43 +249,7 @@ h5 {
     margin: 6px 0;
 }
 
-/* RESPONSIVE MOBILE */
 
-@media (max-width: 768px) {
-
-    .bio-section {
-        height: auto;
-        min-height: 100vh;
-        padding: 20px;
-    }
-
-}
-
-
-
-/* 
-
-.a-content2 {
-  
-    color: black;
-    font-size: 30px;
-    text-decoration: none;
-    width: 720px;
-    height: 480px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-
-    
-} */
-
-
-/* .img {
-width: 50%;
-height: 50%;
-} */
 
 .Footer {
     background-color: #39399a;
@@ -298,4 +262,5 @@ height: 50%;
 .h2 {
 font-size: 30px;
 color: rgb(255, 255, 255);
+
 }
