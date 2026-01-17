@@ -81,7 +81,7 @@ scroll-behavior: smooth;
 
 /* CONTENT FIX VH BUG */
 .Content {
-    background-color: #6f79e5;
+    background-color: #39399a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,6 +250,7 @@ color: rgb(255, 255, 255);
         padding: 20px;
     }
 }
+
 
 
 
