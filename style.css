@@ -13,8 +13,9 @@ scroll-behavior: smooth;
 }
 
 .fcontainer {
-
+    padding-top: 10vh;
 }
+
  
 .Navbar {
     background: rgba(20, 20, 60, 0.7); /* gelap transparan */
@@ -29,7 +30,7 @@ scroll-behavior: smooth;
 
     position: sticky; /* nempel pas scroll */
     top: 0;
-    z-index: 999;
+    z-index: 9999;
 
     box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* depth UI */
 }
@@ -87,8 +88,11 @@ scroll-behavior: smooth;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* FIX dari height */
+    min-height: 80vh;
     font-size: 40px;
+
+    position: relative;
+    z-index: 1;
 }
 
 /* CONTENT BOX FIX ZOOM */
@@ -246,4 +250,5 @@ color: rgb(255, 255, 255);
         padding: 20px;
     }
 }
+
 
