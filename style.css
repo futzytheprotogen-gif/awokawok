@@ -20,6 +20,7 @@ scroll-behavior: smooth;
 .Navbar {
     background: #39399a;
     height: 10vh;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,9 +28,10 @@ scroll-behavior: smooth;
 
     position: fixed;
     top: 0;
-    z-index: 9999;
+    left: 0;
+    width: 100%;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* depth UI */
+    z-index: 9999;
 }
 
 .logo {
@@ -86,7 +88,7 @@ scroll-behavior: smooth;
     justify-content: center;
     align-items: center;
     padding-top: 10vh;
-    min-height: 80vh;
+    height: 80vh;
     font-size: 40px;
 
     position: relative;
@@ -250,6 +252,7 @@ color: rgb(255, 255, 255);
         padding: 20px;
     }
 }
+
 
 
 
