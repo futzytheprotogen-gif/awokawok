@@ -65,8 +65,11 @@ scroll-behavior: smooth;
 }
 
 /* Burger Hidden Desktop */
+
 #menu-toggle {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .burger {
@@ -245,6 +248,7 @@ color: rgb(255, 255, 255);
     padding: 20px;
 }
 }
+
 
 
 
