@@ -98,7 +98,7 @@ scroll-behavior: smooth;
 }
 /* CONTENT BOX FIX ZOOM */
 .a-content {
-    color: white;
+    /* color: white; */
     font-size: 30px;
     text-decoration: none;
     max-width: 720px; /* FIX dari width */
